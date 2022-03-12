@@ -1,0 +1,22 @@
+body{
+  background-color: #EAF6F6;
+}
+hr{
+  color: grey;
+  border-style: dotted none none none;
+  height:30px;
+  width: 3%;
+  border-width: thick;
+}
+h1{
+  color: #66BFBF;
+}
+h3{
+  color: #3E8E7E;
+}
+.sewababy{
+  border-radius: 100%;
+}
+a:hover{
+  color:#9C51E0;
+}
