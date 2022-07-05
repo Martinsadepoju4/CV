@@ -1,0 +1,270 @@
+body {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  color: #ffff;
+  font-size: 18px;
+  margin: 2%;
+  margin-right: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  color: #D0D6F9;
+  font-family: 'Barlow', sans-serif;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 5em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Bellefair', serif;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+h3 {
+  margin: 5% auto 5% 10%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+span {
+  color: #ffff;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-decoration: none;
+  color: #ffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+#navUl {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#destinationUl {
+  display: flex;
+  /* justify-content: space-between; */
+  padding-left: 0;
+}
+
+#destinationUl a {
+  opacity: 0.8;
+  margin-right: 40px;
+  padding-bottom: 10px;
+  transition: border-bottom 300ms;
+}
+
+.h3Span {
+  opacity: 0.5;
+}
+
+.nav {
+  backdrop-filter: blur(81.5485px);
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 60%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navLine {
+  height: 1px;
+  width: 30%;
+  background-color: #ffff;
+  margin-left: 10%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.destination {
+  display: flex;
+  /* margin-top: 10%; */
+  justify-content: space-around;
+}
+
+.destinationMain2 {
+  width: 32.5%;
+}
+
+.destinationLine {
+  height: 1px;
+  background-color: #ffff;
+  opacity: 0.5;
+  margin: 10% auto;
+}
+
+.destinationDistanceAndSpeed {
+  display: flex;
+}
+
+.distAndTime {
+  text-transform: uppercase;
+}
+
+.distAndTime p {
+  font-size: 14px;
+}
+
+.dist {
+  margin-right: 25%;
+}
+
+.destinationMain1 img {
+  margin-top: 5%;
+}
+
+.fa-solid {
+  display: none;
+}
+
+/* interactive classes */
+.active1, .active2 {
+  border-bottom: 5px solid white;
+}
+
+.hover2:hover {
+  border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+#navUl a:hover {
+  border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* media queries */
+@media (max-width:1000px) {
+  body {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  #destinationUl, .destinationDistanceAndSpeed {
+    justify-content: center;
+  }
+
+  .destination {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destinationMain2 {
+    width: 80%;
+  }
+}
+
+@media (max-width:450px) {
+  body {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    margin: 5%;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  #navUl {
+    flex-direction: column;
+    height: 25%;
+    justify-content: space-between;
+    margin-top: 33%;
+    padding-left: 10px
+  }
+
+  #destinationUl {
+    margin-right: -10%;
+    margin-bottom: 10%;
+  }
+
+  .navLine {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    /* flex-direction: column; */
+    /* border: none; */
+    right: 0;
+    top: 0;
+    bottom: -20%;
+    width: 70%;
+  }
+
+  .active1 {
+    border-bottom: none;
+    border-right: 5px solid white;
+    padding-bottom: 0px;
+    padding-right: 162px;
+  }
+
+  #navUl a:hover {
+    border-bottom: none;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .fa-solid {
+    display: inline-block;
+  }
+
+  .fa-xmark {
+    margin: 15% 10% auto 80%
+  }
+
+  .destinationMain1 {
+    text-align: center;
+  }
+
+  .destinationMain1 img {
+    width: 50%;
+  }
+
+  .destinationDistanceAndSpeed {
+    flex-direction: column;
+  }
+
+  .distAndTime {
+    text-align: center;
+    margin-bottom: 8%;
+  }
+
+  .dist {
+    margin-right: 0;
+  }
+}

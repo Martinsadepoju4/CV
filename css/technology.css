@@ -1,0 +1,299 @@
+body {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  color: #ffff;
+  margin: 2%;
+  margin-right: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  color: #D0D6F9;
+  font-family: 'Barlow', sans-serif;
+  font-weight: normal;
+  /* opacity: 0.5; */
+  width: 90%;
+  line-height: 2;
+}
+
+h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 3em;
+  margin: 0 auto 10px auto;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  /* margin: 5% auto 5% 10%; */
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 25%;
+  margin-top: -10%;
+}
+
+h5 {
+  font-weight: normal;
+  text-transform: uppercase
+}
+
+span {
+  color: #ffff;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-decoration: none;
+  color: #ffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+#navUl {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  backdrop-filter: blur(81.5485px);
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 60%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navLine {
+  height: 1px;
+  width: 30%;
+  background-color: #ffff;
+  margin-left: 10%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.technology {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.tech1 {
+  width: 45%;
+}
+
+.tech1CirclesandText {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tech2 {
+  margin-right: -8%;
+}
+
+.circles {
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffff;
+  text-align: center;
+}
+
+.landscapeImage {
+  display: none;
+}
+
+.fa-solid {
+  display: none;
+}
+
+/* interactive classes */
+.active1 {
+  border-bottom: 5px solid white;
+}
+
+.active2 {
+  background-color: #ffff;
+  color: black;
+}
+
+.circle:hover {
+  border: 1px solid #ffff;
+}
+
+#navUl a:hover {
+  border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* media queries */
+@media (max-width: 1000px) {
+  body {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+    margin: 0;
+  }
+
+  header {
+    margin-left: 5%;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  h3 {
+    margin: -55% auto 60% 5%;
+  }
+
+  .portraitImage {
+    display: none;
+  }
+
+  .landscapeImage {
+    display: inline;
+    width: 100%;
+  }
+
+  .technology {
+    flex-direction: column-reverse;
+    margin-top: 20%;
+  }
+
+  .tech1 {
+    width: 100%;
+  }
+
+  .tech1CirclesandText {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 65%;
+  }
+
+  .circles {
+    flex-direction: row;
+  }
+
+  .circle {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  body {
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
+    margin: 5%;
+  }
+
+  header {
+    margin-left: 0;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin: -63% auto 67% 5%;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  #navUl {
+    flex-direction: column;
+    height: 25%;
+    justify-content: space-between;
+    margin-top: 33%;
+    padding-left: 10px
+  }
+
+  .navLine {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    /* flex-direction: column; */
+    /* border: none; */
+    right: 0;
+    top: 0;
+    bottom: -20%;
+    width: 70%;
+  }
+
+  .active1 {
+    border-bottom: none;
+    border-right: 5px solid white;
+    padding-bottom: 0px;
+    padding-right: 159px;
+  }
+
+  #navUl a:hover {
+    border-bottom: none;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .fa-solid {
+    display: inline-block;
+  }
+
+  .fa-xmark {
+    margin: 15% 10% auto 80%
+  }
+
+  .tech2 {
+    margin: auto -6.5% auto;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tech1CirclesandText {
+    width: 100%;
+  }
+}

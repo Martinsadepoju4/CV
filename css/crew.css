@@ -1,0 +1,295 @@
+body {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  color: #ffff;
+  font-size: 18px;
+  margin: 2%;
+  margin-right: 0;
+}
+
+p {
+  color: #D0D6F9;
+  font-family: 'Barlow', sans-serif;
+  font-weight: normal;
+  /* opacity: 0.5; */
+  width: 80%;
+  line-height: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 2.9em;
+  margin: 0 auto 40px auto;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Bellefair', serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  opacity: 0.4;
+  margin-bottom: 10px
+}
+
+h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  /* margin: 5% auto 5% 10%; */
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 25%;
+  margin-top: -20%;
+}
+
+span {
+  color: #ffff;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+a {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-decoration: none;
+  color: #ffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+#navUl {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.h3Span {
+  opacity: 0.5;
+}
+
+.nav {
+  backdrop-filter: blur(81.5485px);
+  background-color: rgba(255, 255, 255, 0.04);
+  width: 60%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navLine {
+  height: 1px;
+  width: 30%;
+  background-color: #ffff;
+  margin-left: 10%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.crew {
+  display: flex;
+  /* margin-top: 10%; */
+  justify-content: space-around;
+}
+
+.crew1, .crew2 {
+  width: 40%;
+}
+
+.crew1 {
+  margin-top: 15%;
+}
+
+.crew2 img {
+  margin-top: 10%;
+  margin-right: -5%;
+}
+
+.circles {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin-top: 19%;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.fa-solid {
+  display: none;
+}
+
+/* interactive classes */
+.active1 {
+  border-bottom: 5px solid white;
+}
+
+.active2 {
+  background-color: #ffff;
+}
+
+.circle:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#navUl a:hover {
+  border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+/* media queries */
+@media (max-width:1000px) {
+  body {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
+
+  p {
+    width: 100%;
+  }
+
+  h3 {
+    margin-left: -90%;
+    margin-bottom: 15%;
+    margin-top: -10%;
+  }
+
+  .crew {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crew2 img {
+    margin-top: 0;
+  }
+
+  .crew1 {
+    width: 70%;
+    text-align: center;
+  }
+
+  .circles {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .circle {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  body {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    margin: 5%;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin: -140% auto 110% auto;
+    word-spacing: normal;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    width: 130%;
+    margin-left: -15%;
+  }
+
+  #navUl {
+    flex-direction: column;
+    height: 25%;
+    justify-content: space-between;
+    margin-top: 33%;
+    padding-left: 10px
+  }
+
+  #navUl a:hover {
+    border-bottom: none;
+  }
+
+  .navLine {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    /* flex-direction: column; */
+    /* border: none; */
+    right: 0;
+    top: 0;
+    bottom: -20%;
+    width: 70%;
+  }
+
+  .active1 {
+    border-bottom: none;
+    border-right: 5px solid white;
+    padding-bottom: 0px;
+    padding-right: 198px;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .fa-solid {
+    display: inline-block;
+  }
+
+  .fa-xmark {
+    margin: 15% 10% auto 80%
+  }
+
+  .crew {
+    flex-direction: column-reverse;
+  }
+
+  .crew2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 30%;
+  }
+
+  .crew2 img {
+    width: 50%
+  }
+
+  .crew2Line {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .crew1TextAndCircles {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .circles {
+    margin-left: -5%;
+  }
+}
